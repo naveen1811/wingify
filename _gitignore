@@ -1,0 +1,17 @@
+*.pyc
+*.orig
+#*.xls
+#*.xlsx
+*.dump
+.idea/
+*.sh
+media/
+migrations/
+django/
+django-debug-toolbar/
+sqlparse/
+build/
+bin/
+staticfiles/
+dump/
+logistics/settings/local.py
