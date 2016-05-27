@@ -74,7 +74,8 @@ WSGI_APPLICATION = 'wingify.wsgi.application'
 #}
 
 import dj_database_url
-DATABASES['default'] = dj_database_url.config(default='postgres://vbqqxmirmzivds:MRHjy7lDc_2Mum_Jql016GIMjH@ec2-54-243-202-84.compute-1.amazonaws.com:5432/dfpbrdsgqidvul')
+DATABASES = {'default': dj_database_url.config(default=
+'postgres://vbqqxmirmzivds:MRHjy7lDc_2Mum_Jql016GIMjH@ec2-54-243-202-84.compute-1.amazonaws.com:5432/dfpbrdsgqidvul')}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
