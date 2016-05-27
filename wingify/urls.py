@@ -14,3 +14,4 @@ urlpatterns = patterns('',
 )
 
 urlpatterns += staticfiles_urlpatterns()
+admin.site.site_header = 'Wingify'
