@@ -13,6 +13,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
@@ -61,16 +62,19 @@ WSGI_APPLICATION = 'wingify.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'wingifydb',
-        'USER': 'naveen',
-        'PASSWORD': 'naveen',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#        'NAME': 'wingifydb',
+#        'USER': 'naveen',
+#        'PASSWORD': 'naveen',
+#        'HOST': 'localhost',
+#        'PORT': '',
+#    }
+#}
+
+import dj_database_url
+DATABASES['default'] = dj_database_url.config(default='postgres://vbqqxmirmzivds:MRHjy7lDc_2Mum_Jql016GIMjH@ec2-54-243-202-84.compute-1.amazonaws.com:5432/dfpbrdsgqidvul')
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
